@@ -1,0 +1,146 @@
+@keyframes home_shadow_slideDown {
+    0% {
+        width: 60%;
+        transform: translateY(-20%);
+    }
+
+    100% {
+        width: 65%;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes img_popUp {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    100% {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.home_page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.home_imgProfile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: img_popUp 1s;
+}
+
+.home_NameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+    width: 60%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    background-color: rgb(192, 67, 67);
+    z-index: 1;
+}
+
+.home_NameContainer_shadow {
+    position: absolute;
+    top: 20%;
+    width: 65%;
+    height: 100%;
+    background-color: rgb(250, 110, 110);
+    z-index: 0;
+    animation: home_shadow_slideDown 1s;
+}
+
+.home_textDescripBox {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgb(192, 67, 67);
+
+}
+
+.home_AboutMe {
+    color: white;
+    text-align: center;
+}
+
+.home_webDevelopment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.home_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home_aboutBox {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgb(192, 67, 67);
+
+}
+
+
+
+@media screen and (min-width: 600px) {
+    @keyframes img_popUp {
+        0% {
+            width: 0px;
+            height: 0px;
+        }
+    
+        100% {
+            width: 230px;
+            height: 230px;
+        }
+    }
+
+    .home_webDevelopment {
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .home_profile {
+        flex-direction: row;
+        align-items: center;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .home_imgProfile {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    @keyframes img_popUp {
+        0% {
+            width: 0px;
+            height: 0px;
+        }
+    
+        100% {
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    .home_imgProfile {
+        width: 350px;
+        height: 350px;
+    }
+}

@@ -1,0 +1,53 @@
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+
+.header_bar {
+    position: sticky;
+    top: 0;
+}
+
+.header_nav {
+    position: relative;
+    height: 60px;
+    background-color: rgb(192, 67, 67);
+    border-bottom: 1px;
+    padding-left: 3%;
+    padding-right: 3%;
+    z-index: 100;
+}
+
+.header_expand {
+    background-color: rgb(212, 74, 74);
+    animation: slideDown 0.3s;
+}
+
+
+.header_expandBtn {
+    cursor: pointer;
+    color: white;
+    border: solid 1px 0px 1px 0px;
+}
+
+.header_expandBtn:active {
+    background-color: rgb(134, 46, 46);
+}
+
+.header_btn {
+    border-bottom: solid rgb(192, 67, 67);
+    cursor: pointer;
+    color: white;
+}
+
+.header_btn:active {
+    color:gainsboro;
+}
+
+.header_select_btn {
+    border-bottom: solid white;
+}
